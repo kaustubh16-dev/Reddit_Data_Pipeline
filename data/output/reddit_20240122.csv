@@ -1,0 +1,351 @@
+id,title,selftext,score,num_comments,author,created_utc,url,over_18,edited,spoiler,stickied
+19cak0s,what is it that you do for work again?,"&#x200B;
+
+https://i.redd.it/zhg215lraudc1.gif",97,18,mesirmysir,2024-01-21 18:51:36,https://www.reddit.com/r/dataengineering/comments/19cak0s/what_is_it_that_you_do_for_work_again/,False,False,False,False
+19cfrl8,What resources did you use to learn Spark?,"I’ve been looking to compile some different spark/pyspark learning links into a repo for reference. What sites/courses/etc have you found helpful? Ideally free, open source resources. Thanks!",24,13,zachtsk,2024-01-21 22:28:11,https://www.reddit.com/r/dataengineering/comments/19cfrl8/what_resources_did_you_use_to_learn_spark/,False,False,False,False
+19cgwl4,so Where should i go after reading 'fundamentals of data engineering ' book,yes any Book or course recommendation would help me being better data enginer or any advice 🙏🏼,24,30,Eisa_t,2024-01-21 23:17:12,https://www.reddit.com/r/dataengineering/comments/19cgwl4/so_where_should_i_go_after_reading_fundamentals/,False,False,False,False
+19cld0z,My Thoughts on EcZachly/Zach Wilson's Bootcamp V.3,"I was already hovering over [Zach's Bootcamp](https://dataexpert.io/) but was a bit insecure since the price was huge and a few not many positive comments on two posts from this subreddit [here](https://www.reddit.com/r/dataengineering/comments/14ieh8u/any_feedback_on_zach_wilsons_data_engineering/) and [here](https://www.reddit.com/r/dataengineering/comments/12otxy6/interview_prep_anyone_in_zach_wilsons_data/). So I have seen the posting about a PPP discount based on the country that you live in, since Brazil's economy is kinda crap, I decided to try, if I got I would buy, otherwise maybe think a bit more and try on another opportunity. To my surprise, I was selected! Now I will give you guys my feedback for all the weeks since I got the both tracks course.
+
+It's important to notice that I have been a Data Engineer for almost 2 years, but never worked on big tech, FAANG, etc. meh experiences, not complete garbage but nothing mind-blowing, know a bit of Scala, worked with Airflow, PySpark, Cloud, Pandas... The classic stuff.
+
+TLDR: Was worth it? Yes. Further, I will point out a few things that made it worth it. Just the knowledge may not be worth it for you.
+
+Week 1 - Dimensional Data Modeling
+
+This first week, I believe Zach was extremely motivated to teach, the classes were insightful and focused on data engineering basis, there I fixated on the differences between OLTP and OLAP, and also learned about the existence of Master Data.
+
+There he points out a lot about **how** you are delivering your data, and the importance of noticing that for each kind of consumer, you may want to prepare the data in different ways.
+
+Learned about additivity on the dimensions, a term that I had never heard before the boot camp, and also about SCD tables, I don't know why, but never heard about this one before too.
+
+Week 2 - Fact Data Modeling
+
+This second week Zach was also extremely motivated, I believe these two topics are his favorite, not that he wasn't motivated on the others, but the difference between Week 1 and 2, and the rest was clear. There I also fixated on the difference between a fact and a dimension.
+
+During this week Zach taught about techniques for fact tables deduplication, and ways to aggregate fact data into lists or binaries format to get fast analytics.
+
+It's good to point out that Zach brings a lot of his experience to FAANG-like companies, so some cases will not apply to you probably, but it is nice to know how happens there, this extends to the whole boot camp.
+
+Week 3 - Analytics Track - Analytical Patterns
+
+Here Zach taught about what kind of patterns to aggregate data would suit better for each type of requirement, for example, what to use when we are looking for root causes, what to use when looking for rankings, etc.
+
+One insightful class from this week was related to the data engineering interview process (usually on big techs), he told me about what to expect in terms of technical tests, what to pay attention to during the coding interview, tips and tricks for window functions, and there I learned also a new thing that never seen before GROUPING SETS, GROUP BY CUBE and GROUP BY ROLLUP.
+
+Week 3 - Infrastructure Track - Flink Streaming
+
+I hated this week, not by Zach's fault, but I didn't like streaming, I think it was good knowledge, but certainly not enough time for someone who has never seen that before. I believe that for people like me that never used or seen Flink before, I was only able to digest and understand the theoretical part, like Kappa and Lambda architecture, or the concepts of micro-batch and near real-time, etc.
+
+During the labs, we used Flink with Kafka, I have never used both of them, but tbh, I was warned, he says on the requirements sections that for infrastructure track: ""Basic understanding of Docker, Flink, and Kafka."" So if you want to do the boot camp, try to look just a bit to understand, it will make your life easier.
+
+I discovered that maybe I don't want to work on Uber lol
+
+Week 4 - Analytics Track - KPIs and Experimentation
+
+This week Zach taught about leading and lagging metrics, another concept that I have never heard before, and also [Timothy Chan](https://www.linkedin.com/in/trchan/) taught about A/B tests, experimentation, etc. Tim is a nice guy, but the content for me, was boring.
+
+Week 4 - Infrastructure Track - Spark Batch
+
+Here was one of the most awaited weeks, here Zach covered topics from the basics of Spark theory, so what is a plan, driver, and executor, to JOIN optimizations and tuning. We have seen differences from the caching and broadcasting, as well as Notebooks x Spark Submit. It was nice but maybe expecting something different.
+
+Week 5 - Analytics Track - Data Quality
+
+Here I can summarize that it was related to the importance of trust in data, and what kind of data quality checks we can use for different cases and each type of table. I used my notion annotations from this class as a cheat sheet to check if I am not missing any type of QA check. Interesting to point out to you guys that he mentioned an Airbnb framework called MIDAS, google it when you have time.
+
+The second class was presented by a Brazilian fellow that is specialized in dbt, it was interesting, of course, have heard about dbt but never had the opportunity to try it.
+
+Also here we learned about data design document building, and I liked it.
+
+Week 5 - Infrastructure Track - Also Data Quality
+
+This week wasn't anything mind-blowing, but was important, here we discussed about differences between SE testing and DE testing, why they have higher quality standards, why most organizations miss the mark
+
+In the second part of this week, the Airflow God [Marc Lamberti](https://www.linkedin.com/in/marclamberti/) caught the reins and gave us a presentation on the theory of data contracts, best practices on data validation, and ways to enhance the data quality, followed by the technical part using Airflow.
+
+Week 6 - Analytics Track - Visual Impact
+
+Here we had a class where the knowledge there was insightful but not useful for me yet, he discussed challenges and what separates the senior data engineer from the staff data engineer, as a few career insights more related to professionals in higher places of the hierarchy, so not absorbed much in my POV, since I am still kinda a minion.
+
+The theory behind Dataviz was taught here, it would be like maybe the Week 3 classes being used in real life, very insightful, for those who are looking for analytics engineering, this week is a must.
+
+Week 6 - Infrastructure Track - Pipeline Maintenance
+
+This one was maybe even harder to digest than the Flink one for a reason, I never had to schedule maintenance on pipelines, reduce costs, or optimize computing on pipelines yet. This kind of stuff is out of my decision power, so great content, but not applicable to me. He taught about the impact of ownership on projects, the significance of domain knowledge, and effective communication. Another example that he talks about is related to tech debt and data migration, so yeah, I have never had to deal with that, so kind of abstract for me.
+
+I have to point out a few things about this boot camp:
+
+1. I thought the weekly homework would be easy peasy, Udemy quiz-like. I couldn't be more wrong. They are hard and require a lot of time. If you don't mind about the certification and the mentorship program, you don't need to worry about that.
+2. Zach has a discord community for those who are in his boot camp, there you can chat with your peers, Zach, and people from other boot camps, it's nice and helps keep the engagement.
+3. With the boot camp, you gain access to past classes and talks from people who have been there, so you can watch for example the [Joe Reis](https://www.linkedin.com/in/josephreis/) talk that happened during V3 boot camp.
+4. Weekly is a Career Development Q&A with [Sarah Floris](https://www.linkedin.com/in/sarah-floris/), we can ask questions, tips for LinkedIn, etc.
+5. For those who do the homework on time, we have access to a weekly coffee chat with Zach, where we can ask questions for him. Extremely worth it, that was what motivated me the most for doing homework, I could participate in all of them, and it was nice to be on the last one, because the first one had like 80 people, and the last maybe 8, so only the warriors were there.
+6. Access to other classes like LLM-related or 30-minute classes to prepare for technical interviews, like data architecture, data modeling, SQL, and DSA.
+7. In the end, we have a capstone project that we developed by ourselves with a few requirements, fetching all the knowledge, it is a good idea, but this one was too much for me, the due date is on Jan 26th, but I will not be able to finish it, marriage ceremony preparation, masters and other life things are draining too much time for me to dive into that, but I would recommend doing that.
+
+With those points above I feel that was worth it, it was intense, but I feel grateful for the knowledge. As I said before if you are already a data engineer master, that is the data modeling king, and all the topics that I mentioned you are comfortable with, or at least with most of them, maybe it will not be worth it for you, this boot camp is more suited for someone that already know something, but still need to climb the ladder, so maybe an end junior\~end mid-level range.
+
+For the V.4 boot camp, Zach removed from the curricula the pipeline maintenance and dataviz week, but it will be available from my cohort and will be adding a dbt week and an end-to-end Machine Learning week though, to be honest, I am not a big fan of ML and didn't fall in love with dbt, so I would prefer doing my version lol, but I am sure that it will be cool too.
+
+I am sure that on many points Zach is improving the UX of his boot camp, so things that were bad from the V.2 were better on V.3 and the V.4 will be better than mine. I conclude with if you can, do it, but be prepared to dedicate 6 weeks to that, just watching the recorded classes is a waste of an opportunity.
+
+If you guys have any other questions about the boot camp I am glad to answer them, I know that it is not cheap and you may feel insecure, you can ask here or reach me on DM.",20,49,abbadb,2024-01-22 02:51:26,https://www.reddit.com/r/dataengineering/comments/19cld0z/my_thoughts_on_eczachlyzach_wilsons_bootcamp_v3/,False,False,False,False
+19ckixd,need to implement code standards and do code reviews,"I am looking to learn to implement coding standards and eventually do code reviews. This is something new in the organization.
+
+I don’t know where to begin. I need help in getting started and eventually understand the optimal/gold standard to reach. I understand reaching the optimal level would be a journey but want to have that in mind.
+
+Can you pls guide on books/blogs anything on how to begin and what all happens in this ?",10,6,educationruinedme1,2024-01-22 02:08:44,https://www.reddit.com/r/dataengineering/comments/19ckixd/need_to_implement_code_standards_and_do_code/,False,False,False,False
+19cpb97,The best way to reduce AWS EMR costs.,"Hi, guys,
+
+We believe the best way to reduce costs is to measure them first, so i got three questions.
+
+1. Do u need a tool that provide u realtime(or hourly) AWS EMR costs at the task\_name level ?
+2. If its a SaaS tool, are u willing to pay for it ?
+3. How much? Assuming monthly bill.
+
+So, whats your anwsers?  :)
+
+&#x200B;
+
+https://preview.redd.it/y6e0pb721ydc1.jpg?width=1200&format=pjpg&auto=webp&s=8e41af35453dcc8f7c682a456328a24d482b4d81",5,7,No_Structure3465,2024-01-22 06:29:33,https://www.reddit.com/r/dataengineering/comments/19cpb97/the_best_way_to_reduce_aws_emr_costs/,False,False,False,False
+19cyd9g,Where’s the boundary between “the added complexity doesnt outweigh the benefit” and “scalability?”,"I see arguments from time to time that it’s fine going straight into using spark, airflow, highly available rdbms, advanced git vc architectures, CI/CD, kubernetes, or whatever. The argument is typically that the designer expects the business to need to go this route eventually, and why design a system that you know you’ll have to redesign later on for scalability reasons?
+
+Then there’s the other argument that these systems are completely unnecessary for small time guys, despite the fact that they offer many unique quality-of-life features that aren’t replicated elsewhere. The complexity of these systems alone seems to warrant a need for implementation, and if that need isn’t satisfied them it’s considered an unnecessary effort. Resume driven development.
+
+So where’s the line between these perspectives? Does it depend on team size and knowledge? What else?",11,8,DuckDatum,2024-01-22 15:37:36,https://www.reddit.com/r/dataengineering/comments/19cyd9g/wheres_the_boundary_between_the_added_complexity/,False,False,False,False
+19cxuav,Am I too fussy?,"Hi guys! seeking some advice on my data engineering career.
+
+Long story short: in 3 years I have had 4 different jobs. I left all of them. I don't know if I am asking too much to companies or I am the problem.
+
+Long story:
+
+I am in my mid 20s. I left all companies due to different factors (no pay raise, bad projects, bad management...). My longest job has been 9 months (actual job). Recruiters keep sending me offers but, would jumping so much affect me in the long run?
+
+Another question I have: why do folks stay at a bad company? I have seen tons of tech employees working at a company they don't like for years. Obviously I am not saying just leave, but look for opportunities. It really amazes me.
+
+Those are my main points because I am starting to think that I am the problem and I should stay at a company although it doesn't have all the requirements I need...
+
+Thoughts on this?",4,41,data_macrolide,2024-01-22 15:14:12,https://www.reddit.com/r/dataengineering/comments/19cxuav/am_i_too_fussy/,False,False,False,False
+19cukvp,"How do you manage the amount of data ""assets"" in your business?","I've been wondering recently just how much of a problem this really is.
+
+To run a data engineering department, you have, in some capacity, all of the following:  
+\- source data (API's, files, external DB tables)  
+\- storage (blobs, databases, lakehouses, more files)  
+\- pipelines (code, no-code, low-code  
+\- dashboards (customer facing, internal, observability) 
+
+All of these exist across different codebases/repositories, tools, teams, software.
+
+How the hell do you manage all of it?
+
+Sure, you can say ""documentation"", but even in the best case, you have a Confluence that has the documentation which explains everything, a README in the Git repo, but it still does little to explain everything that you own and how it all links together, short of a few diagrams that are likely outdated.
+
+Does anybody do this in what they would consider a ""good"" way? Or even any way at all that isn't just documentation?
+
+We're looking into OpenMetadata as a tool to help with some of this on a more granular level, but it still doesn't answer it at the scale I'm talking about.",5,4,theDro54,2024-01-22 12:30:27,https://www.reddit.com/r/dataengineering/comments/19cukvp/how_do_you_manage_the_amount_of_data_assets_in/,False,False,False,False
+19con24,Doubts on being a Data Engineer,"Hello Guys,
+I’m working as a Data Engineer at mid size company. I mostly work on Snowflake, and Tableau. But, I’m trying to convince my manager to assign a ETL project so that I can get some exposure to Aws and Snowpark.
+In parallel, I want to expand my expertise as well, so here are my queries: 
+Firstly, I want to learn spark, how can I start learning, to learn it quicker?
+Secondly, the reason I chose a career in data is because I didn’t enjoy DSA, I’m bad at and no motivation to learn as well. So, is it the end of road for me to achieve a data role at FAANG?
+Thirdly, how do you guys manage time after work to do side projects when learning new skills?
+Finally, Azure or Aws? I found azure to be too much drag and drop. And, more tool based. What do you guys recommend?",4,4,GulabiGovind,2024-01-22 05:48:13,https://www.reddit.com/r/dataengineering/comments/19con24/doubts_on_being_a_data_engineer/,False,False,False,False
+19cvtuu,Advice on data infrastructure,"Hello! I'm trying to set up a new infrastructure for data in my organization. I'm not a data engineer, but I'm trying to understand the problem and look for the best solutions. I wanted to ask you for some advice:
+
+I need to extract data from a source (using Airbyte), place this data in a warehouse (using Clickhouse), transform this data to generate better visualizations (dbt) and eventually visualize this data (Metabase).
+
+I wanted to know if this makes sense. My focus is open source tools, which I can deploy locally and manage, hence the tools mentioned.
+
+After that, I would also like to be able to perform some actions on this data. For example, using Retool or some tool that allows me to perform actions to insert data into my data. So I don't know exactly how to proceed.
+
+I can connect Retool directly to my warehouse and perform actions with the data there, inserting new rows that represent other information linked to some table (for example, a users table), but I understand that this would not be the best way to proceed.
+
+I know that there are ""Reverse ETLs"", which took the data from the warehouse and placed it elsewhere, for example in Retool itself. But, how (preferably using some tool) can I insert new lines of information into my data using this architecture?
+
+I thought that Reverse ETL could connect to Postgres, replicate the data that I think is relevant from the warehouse, then Retool connects to that Postgres and eventually performs data insertions in that database, then Airbyte ingests the data again, doing rewrite of the old data. That makes sense?
+
+Any information, advice or help would be great!
+
+https://preview.redd.it/qhmeb6g1wzdc1.png?width=938&format=png&auto=webp&s=b497632952d22c447aa79da1dc842c4a967d338f",3,1,Doveliver2,2024-01-22 13:39:04,https://www.reddit.com/r/dataengineering/comments/19cvtuu/advice_on_data_infrastructure/,False,False,False,False
+19ct24n,University Subreddit Data Dashboard,"Github link: [https://github.com/Zzdragon66/university-reddit-data-dashboard](https://github.com/Zzdragon66/university-reddit-data-dashboard)
+
+Any Suggestions are welcome. If you find this project useful, consider giving it a star on GitHub. This helps me know there's interest and supports the project's visibility.
+
+# University Reddit Data Dashboard
+
+The University Reddit Data Dashboard provides a comprehensive view of key statistics from the university's subreddit, encompassing both posts and comments over the past week. It features an in-depth analysis of sentiments expressed in these posts, comments, and by the authors themselves, all tracked and evaluated over the same seven-day period.
+
+## Features
+
+The project is entirely hosted on the Google Cloud Platform and is ***horizontal scalable***. The scraping workload is evenly distributed across the computer engines(VM). Data manipulation is done through the Spark cluster(Google dataproc), where by increasing the worker node, the workload will be distributed across and finished more quickly.
+
+## Project Structure
+
+https://preview.redd.it/4t4tagdp2zdc1.jpg?width=1651&format=pjpg&auto=webp&s=12f4e0f6dd1456191d349ed10d2200ca80c5df86
+
+## Examples
+
+The following [dashboard](https://lookerstudio.google.com/reporting/97414aef-54dc-4fc8-8bf5-054f0ac75d2c) is generated with following parameters: 1 VM for airflow, 2 VMs for scraping, 1 VM with Nvidia-T4 GPU, Spark cluster(2 worker node 1 manager node), 10 universities in California.
+
+## Example Dashboard
+
+https://preview.redd.it/zd9ykrnq2zdc1.png?width=2886&format=png&auto=webp&s=0d11ccac6550a059fd1f4c10b1433ae327792096
+
+## Example DAG
+
+https://preview.redd.it/qcyo7njr2zdc1.png?width=2932&format=png&auto=webp&s=f2e6d7fbbaebbc5a69ffb0725a86704486bd708e
+
+## Tools
+
+1. Python
+   1. PyTorch
+   2. Google Cloud Client Library
+   3. Huggingface
+2. Spark(*Data manipulation*)
+3. Apache Airflow(*Data orchestration*)
+   1. Dynamic DAG generation
+   2. Xcom
+   3. Variables
+   4. TaskGroup
+4. Google Cloud Platform
+   1. Computer Engine(*VM & Deep learning*)
+   2. Dataproc (*Spark*)
+   3. Bigquery (*SQL*)
+   4. Cloud Storage (*Data Storage*)
+   5. Looker Studio (*Data visualization*)
+   6. VPC Network and Firewall Rules
+5. Terraform(*Cloud Infrastructure Management*)
+6. Docker(*containerization*) and Dockerhub(*Distribute container images*)
+7. SQL(*Data Manipulation*)
+8. Makefile",5,4,AffectionateEmu8146,2024-01-22 10:57:15,https://www.reddit.com/r/dataengineering/comments/19ct24n/university_subreddit_data_dashboard/,False,False,False,False
+19cnj0r,Pandas - Delta - MinIO,"Hi guys, i am using Pandas to read and write Deltalake table from minIO as dataframe to perform some data processing. Everytime i need to download all delta folder from minIO bucket to local machine, read it as dataframe, perform processing, save it as delta folder and push back to minIO bucket. Then i have to delete the temporary folder in local machine. Is there a way to connect directly from pandas to minIO deltalake like Spark connector? Do you know any document or sample code about using pandas or polars connector instead of Spark for processing data in cluster? Thanks for reading",4,9,resrrdttrt,2024-01-22 04:45:58,https://www.reddit.com/r/dataengineering/comments/19cnj0r/pandas_delta_minio/,False,False,False,False
+19carxy,Feedback on an Event Based Automation System?,"Hello,
+
+I'm currently working on developing email notifications for impending software license expirations within our organization. I'm adopting an event-based automation approach. The architecture I've proposed would use existing instances of Prefect and Postgres, while introducing Redis and Celery as an intermediary to allow Postgres to communicate with Prefect.
+
+The automations are handled via a Postgres `jobs` table. INSERT instigates a NOTIFY which Redis accepts as a PUBLISHER. This propagates to Celery passing along information to the Prefect API.
+
+The job will include details about the deployment to run and the parameters to pass into the deployment. So Redis and Celery are not stuck to any single automation. Furthermore, Celery would query the Prefect API for updates on the Flow Runs status and update the `jobs` table respectively.
+
+The linked architecture (https://imgur.com/a/H5kC6wE) is designed to prevent the creation of isolated solutions for every issue as the code base evolves and matures, avoiding a complex and convoluted long run. I’m hoping this approach to email notifications is not too complicated while offering a much higher benefit. I'd appreciate feedback on this approach.
+
+Our capabilities are limited digitally and it’s in the organizations interest right now to improve our “data platform,” so to speak. So I don’t necessarily see this as an unnecessary effort. What’s your impression on the design?",3,6,DuckDatum,2024-01-21 19:00:54,https://www.reddit.com/r/dataengineering/comments/19carxy/feedback_on_an_event_based_automation_system/,False,False,False,False
+19caao0,Designing a data workflow for a small company,"I work at a company with eight employees, and was recently hired as a data/business analyst. The company uses an in-house software to manage online retail sales. There is a huge amount of data available, and I need to design a workflow to capture sales data and business analytics. Currently, most of the company’s data is stored in a combination of a MySQL database and DynamoDB.
+
+I would like to design a workflow that queries one or both of these databases to record daily statistics (i.e. sales of groups of products over time), cleans the data, and records it in a new “analytics” database. This new data would then be easier to handle for visualization, modeling, etc.
+
+Currently I’m taking a course in AWS Lambda, because it seems like that’s the best way to go to automate my scripts. I’m looking into relational database and NoSQL models, and am leaning towards the latter but I’m unsure.
+
+Does anyone have advice on this workflow, ideas on where to start, or resources to consult? This is my first job in the field, so I really appreciate any advice!
+
+Tl;dr - I am designing a workflow to query a MySQL database > clean data > record statistics in a new “analytics” database > use cleaned data for visualization",4,13,Strong-Mission-118,2024-01-21 18:40:46,https://www.reddit.com/r/dataengineering/comments/19caao0/designing_a_data_workflow_for_a_small_company/,False,False,False,False
+19csc3q,Big Data build on On-Premise,"My boss asked me to build a system that can quickly search and retrieve data. Right now I just process text data. It can be  thousands of T of data.
+
+The data source is  giant  and come from vary resources and format (txt, csv, xlsx, json, ...) (the data from the same resource can be different format and data structure (fields) too).   Data between sources is linked and has overlapping fields but can take different values.  I mean, maybe for the same linked point sample, the data  received from each resource can be different, and wrong.  I cannot elaborate on the details of the project due to  security issue.
+
+Right now, i have Minio as data lake for store raw data, PostgreSQL to store processed data from raw data and using Airflow for running the processses. Right now I  encountered performance problems when upsert data to postgre.
+
+Is there any way to improve upsert performance? Or any other way to store and query data?  
+Do you have any suggestions and Tech-stack  for this?
+
+Thanks you for your help!",3,8,Midori-Yuu,2024-01-22 10:05:14,https://www.reddit.com/r/dataengineering/comments/19csc3q/big_data_build_on_onpremise/,False,False,False,False
+19cpy1e,GCP Professional Data Engineer new pattern,"I've scheduled my GCP PDE exam for 30th Jan, but heard that Google has significantly changed the exam pattern in November. Has anybody appeared for the exam after the pattern change? Are there any dumps available as per the new pattern? What new topics should I focus on for the exam?",3,0,bashed_it,2024-01-22 07:11:15,https://www.reddit.com/r/dataengineering/comments/19cpy1e/gcp_professional_data_engineer_new_pattern/,False,False,False,False
+19chr2m,Would a data engineer with experience in machine learning have a place in the semiconductor industry?,"Hi guys, what's up?
+
+A few years ago, I decided to change careers to work with semiconductors, so I went back to university and am now studying engineering. As I'm older, I couldn't stop working because of my family. Thinking about having experience in technology, I ended up getting involved in data engineering and machine learning. I already have 3 years of professional experience in the field and some relevant certificates.
+
+However, at university, I've been involved in FPGA research, RTL design etc. I've already taken some Verilog and SystemsVerilog courses from Cadence Design Systems, which has a branch here in the city where I live.
+
+Do you think that my experience with data engineering and machine learning, combined with what I've been doing at university, would make it easier for me to enter the semiconductor field? Or would it be knowledge thrown away?",3,1,EversonElias,2024-01-21 23:55:03,https://www.reddit.com/r/dataengineering/comments/19chr2m/would_a_data_engineer_with_experience_in_machine/,False,False,False,False
+19cz7sp,What is stateful stream processing?,,2,0,mwylde_,2024-01-22 16:13:59,https://www.arroyo.dev/blog/stateful-stream-processing,False,False,False,False
+19cxvi9,Define and manage infrastructure using HCL (Terraform)? You may need a Terraform Automation and Collaboration tool,"Hey r/dataengineering,  
+We have seen increased Terraform adoption amongst Data Engineers over the last 2 or so years, but have seen that most of them aren't aware of  Terraform Automation and Collaboration tools that help in CI/CD for terraform and enable RBAC, drift detection and concurrency in the process, so that Terraform can be used efficiently at scale.  
+
+
+There are several open source tools that help with this (Disclosure: I am building Digger, one of the tools):  
+
+
+[Digger](https://github.com/diggerhq/digger)
+
+[Atlantis](https://github.com/runatlantis/atlantis)
+
+[OTF](https://github.com/leg100/otf)
+
+[Terrakube](https://github.com/AzBuilder/terrakube)  
+
+
+Feel free to check them out and share feedback if you are already using any of them. Also please share any challenges you face while using Terraform as a team, it would be useful for us to learn!",3,0,utpalnadiger,2024-01-22 15:15:47,https://www.reddit.com/r/dataengineering/comments/19cxvi9/define_and_manage_infrastructure_using_hcl/,False,False,False,False
+19csi4o,cloud-based Hadoop and Spark experimentation platforms,I'm seeking for some cloud platforms to experiment with as I began learning Hadoop and Spark conceptually and my laptop is too sluggish to handle any big data projects on it. Would you kindly recommend some platfoms to me ?,2,2,Mr_bdnt,2024-01-22 10:17:15,https://www.reddit.com/r/dataengineering/comments/19csi4o/cloudbased_hadoop_and_spark_experimentation/,False,False,False,False
+19cq4gk,How to structure a data pipeline repo for pyspark jupyter notebooks?,"I am planning to build a data pipeline for a new project, which would be in pyspark sagemaker notebooks Technologies used as below
+Orchestration: Airlfow
+Storage: S3
+Final transformed tables will be created in athena.
+
+How would you structure a git repo that's written in pyspark notebooks and with a dag folder. We are also looking to implement CI/CD in the future.
+
+Would like to hear all your suggestions and any github repo examples would be highly appreciated.
+ Thanks!",2,0,arunrajan96,2024-01-22 07:23:39,https://www.reddit.com/r/dataengineering/comments/19cq4gk/how_to_structure_a_data_pipeline_repo_for_pyspark/,False,False,False,False
+19cjl73,What do you guys think about this video?,"Are these mock interviews fr? How can I learn all these or be better than this candidate?
+
+How realistically can someone become this guy with Azure, Python, sql skills ?
+
+[Link to the video](https://youtu.be/JfDGYKvRfWw?si=x3dXEkm2id9AVAPy)",2,2,Jealous-Bat-7812,2024-01-22 01:21:57,https://www.reddit.com/r/dataengineering/comments/19cjl73/what_do_you_guys_think_about_this_video/,False,False,False,False
+19cz2y0,Checkpoints for data modeling tasks,,1,0,willis7747,2024-01-22 16:08:07,https://rahulraj.io/essential-data-modeling-checklist-for-cracking-the-system-design-interview,False,False,False,False
+19cwnqx,Passing from Junior analyst in Big 4 toward an internship in a bank,"I don't know if it is worth the sho. osition in a major investment bank but it's a 9-month internship where I don't know if there could be a possibility to have a full-time position. Some pros is that is abroad, far from my country and this is something I like to do while cons, the major one is to leave a position where I'll become senior next year.  
+
+
+also, the position will be slightly oriented on risk with quantitative applications while atm I'm a data engineer. The good news is the possibility to move to other teams once inside the company. 
+
+I don't know if it is worth the shot. ",1,3,Dry_Frame_7025,2024-01-22 14:19:04,https://www.reddit.com/r/dataengineering/comments/19cwnqx/passing_from_junior_analyst_in_big_4_toward_an/,False,False,False,False
+19cru8f,Learning DataEng Question/Advice,"Hi all,
+
+Apologies if this is not the correct place to ask this question. I have started the dataTalks data eng zoomcamp which I am enjoying. I am a BI/SQL person in my current role (2 years) and I'm keen to transition into data eng so I have been considering portfolio ideas.
+
+What I would like to do is to ingest spotify data into a database and have this take place automatically, perhaps once per day/week. I would then connect to that DB using PowerBI to develop a dashboard. I would like all of this to take place in the cloud so that the ingestion takes place without any reliance on my local machine being turned on or connected to the internet all the time.
+
+Is this a realistic? If so where would you suggest I start?
+
+I don't have much data eng knowledge yet but I have recently learned how to spin up a VM on google cloud, run docker containers/networks with postgres/pgadmin and I have also written a python script to ingest data into the postgres DB by grabbing a CSV from a website. ",1,6,CalligrapherDefiant4,2024-01-22 09:28:49,https://www.reddit.com/r/dataengineering/comments/19cru8f/learning_dataeng_questionadvice/,False,False,False,False
+19cpbvj,Fork in the road - masters degree,"I searched, didn't see anything relevant.
+
+I have an industry background (10 years actuarial) and have done ""data work"" for 5 years.  I won't quite call it data science (my title) or engineering.  SQL, Pandas, Dplyr, Teradata.  Most of the modeling is ""gather all the things and perform feature selection""
+
+The biggest gap in my education coming from finance is computer science fundamentals.  When I lurk on this sub, I realize that I don't understand most of the jargon being used. 
+
+What masters degree would give me the best education?  I am 36.",1,6,Kegheimer,2024-01-22 06:30:36,https://www.reddit.com/r/dataengineering/comments/19cpbvj/fork_in_the_road_masters_degree/,False,False,False,False
+19ciwki,DE with basic programming?,"
+While I am working towards improving my python and SQL.  Is it still possible to get into DE with minimal programming skills. 
+
+Have you seen any examples or is it you? Or should I not even try without improving my skills first?
+
+Are there roles in DE that don't require as much programming but can help me get into the field? ",1,9,Wise_Shop6419,2024-01-22 00:49:35,https://www.reddit.com/r/dataengineering/comments/19ciwki/de_with_basic_programming/,False,False,False,False
+19cimgf,Schema structure in data warehouse,"How do you design your database schemas in your data warehouse to accommodate the varied applications of your data? I know this is nuanced and can widely vary depending on the business you're in. 
+
+I recently moved to a 1)RAW (lake layer) 2) INTEGRATION (semantic layer) 3) ANALYTICS (BI/ reporting layer) structure, but buy-in with other DE's has been challenging and I don't find it a one size fits all structure accross all use cases. We throw in the odd Data Mart when required.
+
+Thanks!",1,1,warrenbuddgett,2024-01-22 00:35:48,https://www.reddit.com/r/dataengineering/comments/19cimgf/schema_structure_in_data_warehouse/,False,False,False,False
+19cdg40,"Is anybody using Azure Synapse, and if so, are you having any issues with private endpoints?","I've been using Synapse for a couple of years, and as of 1/13, our private endpoints in Azure stopped working. I'm working on setting it up with a new client, and we can't get private endpoints deployed there, either.  I've heard from some Microsoft engineers that Synapse can no longer run on a private endpoint.  This is against the security policy where I am.  Has anyone else experienced this? ",1,0,Swimming_Cry_6841,2024-01-21 20:52:18,https://www.reddit.com/r/dataengineering/comments/19cdg40/is_anybody_using_azure_synapse_and_if_so_are_you/,False,False,False,False
+19cda7q,How to optimise my learning journey,"Hello everyone! I’m currently enrolled in an intensive 12-month data engineering program in South Africa, and I’m seeking advice on how to strategically position myself for success. The program includes eight months of learning followed by a four-month internship with sponsoring companies. My goal is not only to secure a job locally but also to be attractive to international employers for better earning potential, considering the current exchange rates. What skills and strategies do you recommend to enhance my marketability? Your insights will be invaluable as I navigate this exciting journey. Thanks in advance!",1,1,Fearless_Jicama2909,2024-01-21 20:45:22,https://www.reddit.com/r/dataengineering/comments/19cda7q/how_to_optimise_my_learning_journey/,False,False,False,False
+19c99y5,"Created a pipeline ingesting data via kafka, processing via akka streams in Scala and moving it to Snowflake","This is one of the projects I have created to learn how to work with real time data and understand how to connect to cloud storage and use snowflake features.
+
+**About the project**:
+
+1. Yelp dataset containing business data across is produced to kafka.
+2. Real time data then is consumed from kafka via alpakka connector and transformed using akka streams with Scala.
+3. Data is moved to mongo DB and also to azure data lake storage gen2 gin multiple files.
+4. Once the data is there in ADLS, snowpipe is configured to moved that data to Snowflake.
+5. Snowflake script is present in the /conf folder of the repo.
+
+Github URL :  [https://github.com/sarthak2897/business-insights](https://github.com/sarthak2897/business-insights)
+
+Technologies used : Kafka,Scala, Akka streams, Mongo DB,Azure Data Lake Storage Gen2, Snowflake
+
+Please provide feedback on how I can improve and modify the pipeline. Thanks!
+
+&#x200B;",1,1,sarthak2897,2024-01-21 17:58:46,https://www.reddit.com/r/dataengineering/comments/19c99y5/created_a_pipeline_ingesting_data_via_kafka/,False,False,False,False
+19cayv2,Data Engineering future in India,"Greetings, esteemed data engineers!
+What do you think is the future of data engineering as a career? Is the field getting saturated with less openings. Also, as far as I have observed, salary is way less compared to software developers for the same experience, atleast in India. Please share your insights.",0,3,EasyTonight07,2024-01-21 19:08:44,https://www.reddit.com/r/dataengineering/comments/19cayv2/data_engineering_future_in_india/,False,False,False,False
+19cq3qv,Are data engineers shyer than data scientists ?,"I have joined thesee two channel, r/dataengineering and r/datascience , and there is no doubt that the DS channel has much more activities much than the DE side.
+
+And I also posted an easy-to-answer topic, 500+  views but no answers. [https://www.reddit.com/r/dataengineering/comments/19cpb97/the\_best\_way\_to\_reduce\_aws\_emr\_costs/?utm\_source=share&utm\_medium=web2x&context=3](https://www.reddit.com/r/dataengineering/comments/19cpb97/the_best_way_to_reduce_aws_emr_costs/?utm_source=share&utm_medium=web2x&context=3)
+
+So,  are data engineers shyer than data scientists ? ",0,7,No_Structure3465,2024-01-22 07:22:11,https://www.reddit.com/r/dataengineering/comments/19cq3qv/are_data_engineers_shyer_than_data_scientists/,False,False,False,False
